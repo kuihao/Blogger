@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="<$BlogLanguageDirection$>">
+
+	<head>
+		<title><$BlogPageTitle$></title>
+		<$BlogMetaData$>
+		<link rel="stylesheet" href="footer_at_bottom.css">
+		<style type="text/css">
+		/*更新紀錄：
+		-----------------------------------------------
+		*2019/02/11...Navbar導航列可以在設定理面關掉，不用嵌入語法
+		*2019/10/21...新增畢業專題連結、新增CSS按鈕滑鼠事件
+		*2019/10/26...刪去不必要的語法、整理介面
+		-----------------------------------------------*/
+		/*---CSS Style---*/
+		html,body {
+			background-color: #ABFFAB;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-image: url("https://i.imgur.com/8yZ1YNT.jpg");	/*https://i.imgur.com/N5dDyOK.jpg*/
+			height:100%;
+			margin:0;
+			/*padding:0;*/
+			text-align:center;
+			font:x-small/1.5em "Trebuchet MS",Verdana,Arial,Sans-serif;
+			font-size: small;
+		}
+		
+		/* Page Structure
+		----------------------------------------------- */
+		@media all {
+			#wrapper {
+				min-width:100%;
+				min-height:100%;/* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
+				position: relative;/* 位置設為relative, 作為footer區塊位置的參考 */
+			}
+			#content{
+				/* 留出header及footer區塊的空間 */
+				padding-top: 40px;
+				padding-bottom: 40px;
+			}
+			#main {
+				width:485px;
+				float:left;
+				background:#fff;
+				margin:0 auto;
+				padding:0 0 10px;
+				color:#000;
+				font-size:97%;
+				line-height:1.5em;
+			}
+			#main2 {
+				float:left;
+				width:100%;
+				background:url("https://resources.blogblog.com/blogblog/data/rounders/corners_main_top.gif") no-repeat left top;
+				padding:10px 0 0;
+			}
+			#main3 {
+				background:url("https://resources.blogblog.com/blogblog/data/rounders/rails_main.gif") repeat-y;
+				padding:0;
+			}
+			#sidebar {
+				width:240px;
+				float:right;
+				margin:15px 0 0;
+				font-size:97%;
+				line-height:1.5em;
+			}
+		}
+		@media handheld {
+			#wrapper {
+				width:100%;
+				height:100%;
+			}
+			#content{
+				/* 留出header及footer區塊的空間 */
+				padding-top: 40px;
+				padding-bottom: 40px;
+			}
+			#main {
+				width:100%;
+				float:none;
+				background:#fff;
+			}
+			#main2 {
+				float:none;
+				background:none;
+			}
+			#main3 {
+			background:none;
+			padding:0;
+			}
+			#sidebar {
+				width:100%;
+				float:none;
+			}
+		}
+
+		/* Blog Header
+		----------------------------------------------- */
+		@media all {
+			#header {
+				background:#2b8924;
+				margin:0 0 0;
+				padding:8px 0 0;
+				color:#fff;
+			}
+			#header div {
+				background:;
+				padding:0 15px 8px;
+			}
+		}
+		@media handheld {
+			#header {
+				background:#2b8924;
+			}
+			#header div {
+				background:none;
+			}
+		}
+		#blog-title {
+			margin:0;
+			padding:10px 30px 5px;
+			font-size:200%;
+			line-height:1.2em;
+		}
+		#blog-title a {
+			text-decoration:none;
+			color:#fff;
+		}
+		#description {
+			margin:0;
+			padding:5px 30px 10px;
+			font-size:94%;
+			line-height:1.5em;
+		}
+
+		/* Footer
+		----------------------------------------------- */
+		#footer {
+			/* 設定footer的高度 */
+			height: 40px;
+			box-sizing: border-box;
+			/* 設定footer絕對位置在底部 */
+			position: absolute;
+			bottom: 0;
+			/* 展開footer寬度 */
+			width: 100%;
+		  
+			clear:both;
+			margin:0;
+			padding:15px 0 0;
+		}
+		@media all {
+			#footer div {
+				background:#2b8924;
+				padding:8px 0 0;
+				color:#fff;
+			}
+			#footer div div {
+				background:;
+				padding:0 15px 8px;
+			}
+		}
+		@media handheld {
+			#footer div {
+				background:#2b8924;
+			}
+			#footer div div {
+				background:none;
+			}
+		}
+		#footer hr {display:none;}
+		#footer p {margin:0;}
+		#footer a {color:#fff;}
+		
+		/*Button
+		------------------------------------------------ */
+		.over {color:yellow; background: #9bfe94e3}
+		.down {color:DeepSkyBlue; background: #9bfe94e3; font-style: italic}
+		</style>
+	</head>
+	<body>
+		<!-- Begin #wrapper -->
+		<div id="wrapper">
+			<!-- Begin #Blog Header -->
+			<div id="header" style="text-align:center;">
+				<div>
+					<h1 id="blog-title">
+						<ItemPage><a href="<$BlogURL$>"></ItemPage>
+						<$BlogTitle$>
+						<ItemPage></a></ItemPage>
+					</h1>
+					<p id="description"><$BlogDescription$></p>
+				</div>
+			</div>
+			<!-- End #Blog Header -->
+			<!-- Begin #content -->
+			<div id="content">
+				<!-- Begin #main -->
+					<!-- Begin button -->
+					<p>
+						<input type="button" value="做事人-友善農夫FARM市集(觀光系畢業專題)" 
+						style="width: 400px;height: 50px;border: 2px #33d00c dashed;background-color: #9bfe94e3;" 
+						onclick="location.href='https://www.facebook.com/WeAreWorker8/'" 
+						onMouseOver="this.className='over';" onMouseOut="this.className='';" 
+						onMouseDown="this.className='down';" onMouseUp="this.className='over';" 
+						name="Button1">
+					</p>
+					<p>
+						<input type="button" value="QG山海(社會公益組織)" 
+						style="width: 400px;height: 50px;border: 2px #33d00c dashed;background-color: #9bfe94e3;" 
+						onclick="location.href='https://qgmountainsea.wixsite.com/website'" 
+						onMouseOver="this.className='over';" onMouseOut="this.className='';" 
+						onMouseDown="this.className='down';" onMouseUp="this.className='over';" 
+						name="Button2">
+					</p>
+					<p>
+						<input type="button" value="花東社會創新(資策會實習專題)" 
+						style="width: 400px;height: 50px;border: 2px #33d00c dashed;background-color: #9bfe94e3;" 
+						onclick="location.href='https://htsocialinnovation.com/'" 
+						onMouseOver="this.className='over';" onMouseOut="this.className='';" 
+						onMouseDown="this.className='down';" onMouseUp="this.className='over';" 
+						name="Button3">
+					</p>
+					<p>
+						<input type="button" value="SAIDKY你的專屬健身教練(工研院專題)" 
+						style="width: 400px;height: 50px;border: 2px #33d00c dashed;background-color: #9bfe94e3;" 
+						onclick="location.href='https://www.facebook.com/Saidky-641662789501046/'" 
+						onMouseOver="this.className='over';" onMouseOut="this.className='';" 
+						onMouseDown="this.className='down';" onMouseUp="this.className='over';" 
+						name="Button4">
+					</p>
+					<p>
+						<input type="button" value="程式語言筆記(個人部落格)" 
+						style="width: 400px;height: 50px;border: 2px #33d00c dashed;background-color: #9bfe94e3;" 
+						onclick="location.href='http://vincent7421.pixnet.net/blog'" 
+						onMouseOver="this.className='over';" onMouseOut="this.className='';" 
+						onMouseDown="this.className='down';" onMouseUp="this.className='over';" 
+						name="Button5">
+					</p>
+					<p>
+						<input type="button" value="永續觀光影片(YouTube)" 
+						style="width: 400px;height: 50px;border: 2px #33d00c dashed;background-color: #9bfe94e3;" 
+						onclick="location.href='https://www.youtube.com/watch?v=yGq0ri5sEAI&feature=youtu.be'" 
+						onMouseOver="this.className='over';" onMouseOut="this.className='';" 
+						onMouseDown="this.className='down';" onMouseUp="this.className='over';" 
+						name="Button6">
+					</p>
+					<!-- End button -->
+				<!-- End #main -->
+			</div>
+			<!-- End #content -->
+			<!-- Begin #footer -->
+			<div id="footer" style="text-align:center;">
+				<div>
+					<div>						
+						<p>Copyright © 2019 Kuihao Chang. All rights reserved &nbsp;</p>
+					</div>
+				</div>
+			</div>
+			<!-- End #footer -->
+		</div>
+		<!-- End #wrapper -->
+	</body>
+</html>
