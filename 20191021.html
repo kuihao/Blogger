@@ -1,10 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="<$BlogLanguageDirection$>">
+
 <head>
-<title><$BlogPageTitle$></title>
-			<$BlogMetaData$>
-	<style type="text/css">
-	/*
+	<title>
+		<$BlogPageTitle$>
+	</title>
+	<$BlogMetaData$>
+		<style type="text/css">
+			/*
 	-----------------------------------------------
 	重大更新紀錄：
 	Blogger Template Style
@@ -13,246 +16,301 @@
 	*2019/02/11...我是Kuihao新的網頁工程師，來升級你啦！！！新功能：Navbar導航列可以再設定理面關掉，不用嵌入語法
 	*2019/10/21...新增畢業專題連結、新增CSS按鈕滑鼠事件
 	----------------------------------------------- */
-	/*---
+			/*---
 	首先head中這些就是CSS碼，改外觀好看屬性排版顏色形狀之用，日後再刪吧，反正結構被我拆了也顯示不出來，只是拖慢載入速度
 	---*/
 
-	body {
-	  /*background:#aba;*/
-	  margin:0;
-	  padding:0;
-	  background-image: url("https://i.imgur.com/8yZ1YNT.jpg")/*center center fixed no-repeat*/; /*https://i.imgur.com/N5dDyOK.jpg*/
-	  background-size: cover;
-	  text-align:center;
-	  font:x-small/1.5em "Trebuchet MS",Verdana,Arial,Sans-serif;
-	  color:#333;
-	  font-size/* */:/**/small;
-	  font-size: /**/small;
-	  }
+			body {
+				/*background:#aba;*/
+				margin: 0;
+				padding: 0;
+				background-image: url("https://i.imgur.com/8yZ1YNT.jpg")
+					/*center center fixed no-repeat*/
+				;
+				/*https://i.imgur.com/N5dDyOK.jpg*/
+				background-size: cover;
+				text-align: center;
+				font: x-small/1.5em "Trebuchet MS", Verdana, Arial, Sans-serif;
+				color: #333;
+				font-size
+				/* */
+				:
+					/**/
+					small;
+				font-size:
+					/**/
+					small;
+			}
 
 
-	/* Page Structure
+			/* Page Structure
 	----------------------------------------------- */
-	/* The images which help create rounded corners depend on the 
+			/* The images which help create rounded corners depend on the 
 	   following widths and measurements. If you want to change 
 	   these measurements, the images will also need to change.
 	   */
-	@media all {
-	  #content {
-		width:740px;
-		margin:0 auto;
-		text-align:middle;
-		}
-	  #main {
-		width:485px;
-		float:left;
-		background:#fff url("https://resources.blogblog.com/blogblog/data/rounders/corners_main_bot.gif") no-repeat left bottom;
-		margin:15px 0 0;
-		padding:0 0 10px;
-		color:#000;
-		font-size:97%;
-		line-height:1.5em;
-		}
-	  #main2 {
-		float:left;
-		width:100%;
-		background:url("https://resources.blogblog.com/blogblog/data/rounders/corners_main_top.gif") no-repeat left top;
-		padding:10px 0 0;
-		}
-	  #main3 {
-		background:url("https://resources.blogblog.com/blogblog/data/rounders/rails_main.gif") repeat-y;
-		padding:0;
-		}
-	  #sidebar {
-		width:240px;
-		float:right;
-		margin:15px 0 0;
-		font-size:97%;
-		line-height:1.5em;
-		}
-	  }
-	@media handheld {
-	  #content {
-		width:90%;
-		}
-	  #main {
-		width:100%;
-		float:none;
-		background:#fff;
-		}
-	  #main2 {
-		float:none;
-		background:none;
-		}
-	  #main3 {
-		background:none;
-		padding:0;
-		}
-	  #sidebar {
-		width:100%;
-		float:none;
-		}
-	  }
+			@media all {
+				#content {
+					width: 740px;
+					margin: 0 auto;
+					text-align: middle;
+				}
+
+				#main {
+					width: 485px;
+					float: left;
+					background: #fff url("https://resources.blogblog.com/blogblog/data/rounders/corners_main_bot.gif") no-repeat left bottom;
+					margin: 15px 0 0;
+					padding: 0 0 10px;
+					color: #000;
+					font-size: 97%;
+					line-height: 1.5em;
+				}
+
+				#main2 {
+					float: left;
+					width: 100%;
+					background: url("https://resources.blogblog.com/blogblog/data/rounders/corners_main_top.gif") no-repeat left top;
+					padding: 10px 0 0;
+				}
+
+				#main3 {
+					background: url("https://resources.blogblog.com/blogblog/data/rounders/rails_main.gif") repeat-y;
+					padding: 0;
+				}
+
+				#sidebar {
+					width: 240px;
+					float: right;
+					margin: 15px 0 0;
+					font-size: 97%;
+					line-height: 1.5em;
+				}
+			}
+
+			@media handheld {
+				#content {
+					width: 90%;
+				}
+
+				#main {
+					width: 100%;
+					float: none;
+					background: #fff;
+				}
+
+				#main2 {
+					float: none;
+					background: none;
+				}
+
+				#main3 {
+					background: none;
+					padding: 0;
+				}
+
+				#sidebar {
+					width: 100%;
+					float: none;
+				}
+			}
 
 
 
-	/* Blog Header
+			/* Blog Header
 	----------------------------------------------- */
-	@media all {
-	  #header {
-		background:#2b8924 url("https://resources.blogblog.com/blogblog/data/rounders/corners_cap_top.gif") no-repeat left top;
-		margin:0 0 0;
-		padding:8px 0 0;
-		color:#fff;
-		}
-	  #header div {
-		background:url("https://resources.blogblog.com/blogblog/data/rounders/corners_cap_bot.gif") no-repeat left bottom;
-		padding:0 15px 8px;
-		}
-	  }
-	@media handheld {
-	  #header {
-		background:#2b8924;
-		}
-	  #header div {
-		background:none;
-		}
-	  }
-	#blog-title {
-	  margin:0;
-	  padding:10px 30px 5px;
-	  font-size:200%;
-	  line-height:1.2em;
-	  }
-	#blog-title a {
-	  text-decoration:none;
-	  color:#fff;
-	  }
-	#description {
-	  margin:0;
-	  padding:5px 30px 10px;
-	  font-size:94%;
-	  line-height:1.5em;
-	  }
+			@media all {
+				#header {
+					background: #2b8924 url("https://resources.blogblog.com/blogblog/data/rounders/corners_cap_top.gif") no-repeat left top;
+					margin: 0 0 0;
+					padding: 8px 0 0;
+					color: #fff;
+				}
+
+				#header div {
+					background: url("https://resources.blogblog.com/blogblog/data/rounders/corners_cap_bot.gif") no-repeat left bottom;
+					padding: 0 15px 8px;
+				}
+			}
+
+			@media handheld {
+				#header {
+					background: #2b8924;
+				}
+
+				#header div {
+					background: none;
+				}
+			}
+
+			#blog-title {
+				margin: 0;
+				padding: 10px 30px 5px;
+				font-size: 200%;
+				line-height: 1.2em;
+			}
+
+			#blog-title a {
+				text-decoration: none;
+				color: #fff;
+			}
+
+			#description {
+				margin: 0;
+				padding: 5px 30px 10px;
+				font-size: 94%;
+				line-height: 1.5em;
+			}
 
 
 
-	/* Footer
+			/* Footer
 	----------------------------------------------- */
-	#footer {
-	  clear:both;
-	  margin:0;
-	  padding:15px 0 0;
-	  }
-	@media all {
-	  #footer div {
-		background:#2b8924 url("https://resources.blogblog.com/blogblog/data/rounders/corners_cap_top.gif") no-repeat left top;
-		padding:8px 0 0;
-		color:#fff;
-		}
-	  #footer div div {
-		background:url("https://resources.blogblog.com/blogblog/data/rounders/corners_cap_bot.gif") no-repeat left bottom;
-		padding:0 15px 8px;
-		}
-	  }
-	@media handheld {
-	  #footer div {
-		background:#2b8924;
-		}
-	  #footer div div {
-		background:none;
-		}
-	  }
-	#footer hr {display:none;}
-	#footer p {margin:0;}
-	#footer a {color:#fff;}
-	
-	/*Button
+			#footer {
+				clear: both;
+				margin: 0;
+				padding: 15px 0 0;
+			}
+
+			@media all {
+				#footer div {
+					background: #2b8924 url("https://resources.blogblog.com/blogblog/data/rounders/corners_cap_top.gif") no-repeat left top;
+					padding: 8px 0 0;
+					color: #fff;
+				}
+
+				#footer div div {
+					background: url("https://resources.blogblog.com/blogblog/data/rounders/corners_cap_bot.gif") no-repeat left bottom;
+					padding: 0 15px 8px;
+				}
+			}
+
+			@media handheld {
+				#footer div {
+					background: #2b8924;
+				}
+
+				#footer div div {
+					background: none;
+				}
+			}
+
+			#footer hr {
+				display: none;
+			}
+
+			#footer p {
+				margin: 0;
+			}
+
+			#footer a {
+				color: #fff;
+			}
+
+			/*Button
 	------------------------------------------------ */
-	.over {color:yellow; background: #9bfe94e3}
-	.down {color:DeepSkyBlue; background: #9bfe94e3; font-style: italic}
-	
-	
-	</style>
+			.over {
+				color: yellow;
+				background: #9bfe94e3
+			}
+
+			.down {
+				color: DeepSkyBlue;
+				background: #9bfe94e3;
+				font-style: italic
+			}
+		</style>
 </head>
+
 <body>
-<!--HTML的結構重頭戲，來解構囉～-->
-<!-- Begin #content - Centers all content and provides edges for floated columns -->
-<div id="content">
-	<!-- Blog Header -->
-	<div id="header" style="text-align:center;"><div>
+	<!--HTML的結構重頭戲，來解構囉～-->
+	<!-- Begin #content - Centers all content and provides edges for floated columns -->
+	<div id="content">
+		<!-- Blog Header -->
+		<div id="header" style="text-align:center;">
+			<div>
 
-	  <h1 id="blog-title">
-		<ItemPage><a href="<$BlogURL$>"></ItemPage>
-		<$BlogTitle$>
-		<ItemPage></a></ItemPage>
-	  </h1>
-	  <p id="description"><$BlogDescription$></p>
+				<h1 id="blog-title">
+					<ItemPage><a href="<$BlogURL$>"></ItemPage>
+					<$BlogTitle$>
+						<ItemPage></a></ItemPage>
+				</h1>
+				<p id="description">
+					<$BlogDescription$>
+				</p>
 
-	</div></div>
-	
-	<!-- Begin按鈕 -->
-	<p>
-		<input type="button" value="做事人-友善農夫FARM市集(觀光系畢業專題)" 
-		style="width: 400px;height: 50px;border: 2px #33d00c dashed;background-color: #9bfe94e3;" 
-		onclick="location.href='https://www.facebook.com/WeAreWorker8/'" 
-		onMouseOver="this.className='over';" onMouseOut="this.className='';" 
-		onMouseDown="this.className='down';" onMouseUp="this.className='over';" 
-		name="Button1">
-	</p>
-	<p>
-		<input type="button" value="QG山海(社會公益組織)" 
-		style="width: 400px;height: 50px;border: 2px #33d00c dashed;background-color: #9bfe94e3;" 
-		onclick="location.href='https://qgmountainsea.wixsite.com/website'" 
-		onMouseOver="this.className='over';" onMouseOut="this.className='';" 
-		onMouseDown="this.className='down';" onMouseUp="this.className='over';" 
-		name="Button2">
-	</p>
-	<p>
-		<input type="button" value="花東社會創新(資策會實習專題)" 
-		style="width: 400px;height: 50px;border: 2px #33d00c dashed;background-color: #9bfe94e3;" 
-		onclick="location.href='https://htsocialinnovation.com/'" 
-		onMouseOver="this.className='over';" onMouseOut="this.className='';" 
-		onMouseDown="this.className='down';" onMouseUp="this.className='over';" 
-		name="Button3">
-	</p>
-	<p>
-		<input type="button" value="SAIDKY你的專屬健身教練(工研院專題)" 
-		style="width: 400px;height: 50px;border: 2px #33d00c dashed;background-color: #9bfe94e3;" 
-		onclick="location.href='https://www.facebook.com/Saidky-641662789501046/'" 
-		onMouseOver="this.className='over';" onMouseOut="this.className='';" 
-		onMouseDown="this.className='down';" onMouseUp="this.className='over';" 
-		name="Button4">
-	</p>
-	<p>
-		<input type="button" value="程式語言筆記(個人部落格)" 
-		style="width: 400px;height: 50px;border: 2px #33d00c dashed;background-color: #9bfe94e3;" 
-		onclick="location.href='http://vincent7421.pixnet.net/blog'" 
-		onMouseOver="this.className='over';" onMouseOut="this.className='';" 
-		onMouseDown="this.className='down';" onMouseUp="this.className='over';" 
-		name="Button5">
-	</p>
-	<p>
-		<input type="button" value="永續觀光影片(YouTube)" 
-		style="width: 400px;height: 50px;border: 2px #33d00c dashed;background-color: #9bfe94e3;" 
-		onclick="location.href='https://www.youtube.com/watch?v=yGq0ri5sEAI&feature=youtu.be'" 
-		onMouseOver="this.className='over';" onMouseOut="this.className='';" 
-		onMouseDown="this.className='down';" onMouseUp="this.className='over';" 
-		name="Button6">
-	</p>
-	<!-- End按鈕 -->
-	
-	<!-- Begin #main -->
-	<!-- End #main -->
+			</div>
+		</div>
 
-	<!-- Begin #footer -->
-	<div id="footer" style="text-align:center;"><div><div><hr />
-	  <p>Copyright © 2019 Kuihao Chang. All rights reserved &nbsp;</p>
-	</div></div></div>
-	<!-- End #footer -->
-	
-</div>
-<!-- End #content -->
+		<!-- Begin按鈕 -->
+		<div onclick="location.href='https://www.facebook.com/WeAreWorker8/'">
+			做事人-友善農夫FARM市集(觀光系畢業專題)
+		</div>
+		<div>
+			<input type="button" value="做事人-友善農夫FARM市集(觀光系畢業專題)"
+				onclick="location.href='https://www.facebook.com/WeAreWorker8/'">
+		</div>
+		<p>
+			<input type="button" value="做事人-友善農夫FARM市集(觀光系畢業專題)"
+				style="width: 400px;height: 50px;border: 2px #33d00c dashed;background-color: #9bfe94e3;"
+				onclick="location.href='https://www.facebook.com/WeAreWorker8/'" onMouseOver="this.className='over';"
+				onMouseOut="this.className='';" onMouseDown="this.className='down';" onMouseUp="this.className='over';"
+				name="Button1">
+		</p>
+		<p>
+			<input type="button" value="QG山海(社會公益組織)"
+				style="width: 400px;height: 50px;border: 2px #33d00c dashed;background-color: #9bfe94e3;"
+				onclick="location.href='https://qgmountainsea.wixsite.com/website'" onMouseOver="this.className='over';"
+				onMouseOut="this.className='';" onMouseDown="this.className='down';" onMouseUp="this.className='over';"
+				name="Button2">
+		</p>
+		<p>
+			<input type="button" value="花東社會創新(資策會實習專題)"
+				style="width: 400px;height: 50px;border: 2px #33d00c dashed;background-color: #9bfe94e3;"
+				onclick="location.href='https://htsocialinnovation.com/'" onMouseOver="this.className='over';"
+				onMouseOut="this.className='';" onMouseDown="this.className='down';" onMouseUp="this.className='over';"
+				name="Button3">
+		</p>
+		<p>
+			<input type="button" value="SAIDKY你的專屬健身教練(工研院專題)"
+				style="width: 400px;height: 50px;border: 2px #33d00c dashed;background-color: #9bfe94e3;"
+				onclick="location.href='https://www.facebook.com/Saidky-641662789501046/'"
+				onMouseOver="this.className='over';" onMouseOut="this.className='';"
+				onMouseDown="this.className='down';" onMouseUp="this.className='over';" name="Button4">
+		</p>
+		<p>
+			<input type="button" value="程式語言筆記(個人部落格)"
+				style="width: 400px;height: 50px;border: 2px #33d00c dashed;background-color: #9bfe94e3;"
+				onclick="location.href='http://vincent7421.pixnet.net/blog'" onMouseOver="this.className='over';"
+				onMouseOut="this.className='';" onMouseDown="this.className='down';" onMouseUp="this.className='over';"
+				name="Button5">
+		</p>
+		<p>
+			<input type="button" value="永續觀光影片(YouTube)"
+				style="width: 400px;height: 50px;border: 2px #33d00c dashed;background-color: #9bfe94e3;"
+				onclick="location.href='https://www.youtube.com/watch?v=yGq0ri5sEAI&feature=youtu.be'"
+				onMouseOver="this.className='over';" onMouseOut="this.className='';"
+				onMouseDown="this.className='down';" onMouseUp="this.className='over';" name="Button6">
+		</p>
+		<!-- End按鈕 -->
+
+		<!-- Begin #main -->
+		<!-- End #main -->
+
+		<!-- Begin #footer -->
+		<div id="footer" style="text-align:center;">
+			<div>
+				<div>
+					<hr />
+					<p>Copyright © 2019 Kuihao Chang. All rights reserved &nbsp;</p>
+				</div>
+			</div>
+		</div>
+		<!-- End #footer -->
+
+	</div>
+	<!-- End #content -->
 
 </body>
+
 </html>
