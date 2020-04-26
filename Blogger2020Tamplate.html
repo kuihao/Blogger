@@ -2363,6 +2363,29 @@ background-color: #f8961e;
 color: white;
 }
 
+/*.comments, .embed{
+background-color: #ffffffcc;
+}*/
+
+.comment-form > iframe{
+  background-color: white;
+  border-style: dotted;
+  border-width: 2px;
+}
+
+#Image2 > div > a >img{
+position: fixed;
+bottom: 2px;
+right: 2px;
+height: 50px;
+width: 50px;
+opacity:0.5;
+}
+
+#Image2 > div > a >img:hover{
+opacity:1;
+}
+
 @media only screen and (min-width: 1160px){
  #LinkList1 > div > ul{
  background-color: #ffefac;
@@ -2812,7 +2835,7 @@ color: white;
           </b:if>
         </b:includable>
                     </b:widget>
-                    <b:widget id='HTML3' locked='false' title='' type='HTML' visible='true'>
+                    <b:widget id='HTML3' locked='false' title='' type='HTML' visible='false'>
                       <b:widget-settings>
                         <b:widget-setting name='content'>&lt;br /&gt;
 &lt;div class=&#39;line-it-button&#39; data-color=&#39;default&#39; data-count=&#39;true&#39; data-lang=&#39;zh_Hant&#39; data-size=&#39;large&#39; data-type=&#39;share-a&#39; data-url=&#39;https://kuihaolink.blogspot.com/&#39; data-ver=&#39;3&#39; style=&#39;display: none;&#39;/&gt;&lt;/div&gt;
@@ -2833,7 +2856,7 @@ color: white;
                 <b:section id='header' name='Header' showaddelement='false'>
                   <b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
                     <b:widget-settings>
-                      <b:widget-setting name='content'><![CDATA[<!-- 跑馬燈 --><marquee>觀光系拚資工所換血ing......擅長C++、Java、php、Javascript、CSS，具備網頁開發經驗，請點選Github看作品</marquee>]]></b:widget-setting>
+                      <b:widget-setting name='content'><![CDATA[<!-- 跑馬燈 --><marquee>觀光系拚資工所換血ing......  擅長C++、Java、php、Javascript、CSS，具備網頁開發經驗，請點選Github看作品</marquee>]]></b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main'>
   <b:include name='widget-title'/>
@@ -2925,13 +2948,13 @@ color: white;
                       <b:widget-setting name='link-5'>https://www.facebook.com/Saidky-641662789501046/</b:widget-setting>
                       <b:widget-setting name='link-6'>http://vincent7421.pixnet.net/blog</b:widget-setting>
                       <b:widget-setting name='link-3'>https://qgmountainsea.wixsite.com/website</b:widget-setting>
-                      <b:widget-setting name='link-4'>https://kuihaolink.blogspot.com/p/blog-page.html</b:widget-setting>
+                      <b:widget-setting name='link-4'>https://kuihaolink.blogspot.com/p/blog-page.html#198256114382761218</b:widget-setting>
                       <b:widget-setting name='text-1'>觀光系畢業專題(做事人-友善農夫FARM市集)</b:widget-setting>
                       <b:widget-setting name='text-0'>Github(程式作品集及LeetCode練習)</b:widget-setting>
                       <b:widget-setting name='text-3'>QG山海--創作生活&#12289;關注環保的NGO(擔任網頁工程師)</b:widget-setting>
                       <b:widget-setting name='text-2'>專題影片(拾食計畫&#65306;QG x FARM市集)</b:widget-setting>
                       <b:widget-setting name='text-5'>工研院專題(SAIDKY你的專屬健身教練)</b:widget-setting>
-                      <b:widget-setting name='text-4'>資策會實習專題&#65306;花東社會創新(點選後往下滑)</b:widget-setting>
+                      <b:widget-setting name='text-4'>資策會實習專題&#65306;花東社會創新</b:widget-setting>
                       <b:widget-setting name='text-7'>活動行銷影片(YouTube)</b:widget-setting>
                       <b:widget-setting name='text-6'>程式語言筆記(個人部落格)</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
@@ -3110,7 +3133,7 @@ color: white;
                   <b:widget-setting name='showDateHeader'>false</b:widget-setting>
                   <b:widget-setting name='style.textcolor'>#a93e33</b:widget-setting>
                   <b:widget-setting name='showShareButtons'>true</b:widget-setting>
-                  <b:widget-setting name='showCommentLink'>false</b:widget-setting>
+                  <b:widget-setting name='showCommentLink'>true</b:widget-setting>
                   <b:widget-setting name='style.urlcolor'>#f4d6d3</b:widget-setting>
                   <b:widget-setting name='showAuthor'>false</b:widget-setting>
                   <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
@@ -3631,6 +3654,34 @@ color: white;
           </main>
         </div>
         <b:section class='footer' id='footer' name='Footer' showaddelement='false' tag='footer'>
+          <b:widget id='Image2' locked='false' title='' type='Image' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='displayUrl'>http://1.bp.blogspot.com/-RtlTmfrXdno/XqVhuZoAwdI/AAAAAAAAXuM/4gG0wIhPGOQnP4P65z-xUhKk6fyYZmEWACK4BGAYYCw/s1600/top.png</b:widget-setting>
+              <b:widget-setting name='displayHeight'>208</b:widget-setting>
+              <b:widget-setting name='sectionWidth'>600</b:widget-setting>
+              <b:widget-setting name='shrinkToFit'>true</b:widget-setting>
+              <b:widget-setting name='displayWidth'>208</b:widget-setting>
+              <b:widget-setting name='link'>#search_top</b:widget-setting>
+              <b:widget-setting name='caption'/>
+            </b:widget-settings>
+            <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <b:include name='content'/>
+</b:includable>
+            <b:includable id='content'>
+  <div class='widget-content'>
+    <b:tag cond='data:link' expr:href='data:link' name='a'>
+      <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'>
+        <b:attr cond='data:sourceSet' expr:value='data:sourceSet' name='srcset'/>
+      </img>
+    </b:tag>
+    <br/>
+    <b:if cond='data:caption'>
+      <span class='caption'><data:caption/></span>
+    </b:if>
+  </div>
+</b:includable>
+          </b:widget>
           <b:widget id='Attribution1' locked='true' title='' type='Attribution' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='copyright'>Copyright &#169; 2020 Kuihao Chang. All rights reserved</b:widget-setting>
@@ -3675,7 +3726,7 @@ color: white;
       <b:section id='sidebar' name='Sidebar' preferred='yes'>
         <b:widget id='Text1' locked='false' title='Contract Me' type='Text' visible='true'>
           <b:widget-settings>
-            <b:widget-setting name='content'>Email: 41053A041@gmail.com.tw</b:widget-setting>
+            <b:widget-setting name='content'>Email: 41053A041@gms.ndhu.edu.tw</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
   <b:include name='widget-title'/>
@@ -3686,7 +3737,7 @@ color: white;
         </b:widget>
         <b:widget id='PageList2' locked='false' title='網頁連結' type='PageList' visible='true'>
           <b:widget-settings>
-            <b:widget-setting name='pageListJson'><![CDATA[{'home': {'href': 'https://kuihaolink.blogspot.com/', 'title': '首頁', 'position': 0}, 'link0': {'href': 'https://github.com/PetiingCat', 'title': 'Github(程式作品集及LeetCode練習)', 'position': 1}, 'link1': {'href': 'http://vincent7421.pixnet.net/blog', 'title': '程式語言筆記(個人部落格)', 'position': 2}, 'link2': {'href': 'https://qgmountainsea.wixsite.com/website', 'title': 'QG山海--創作生活、關注環保的NGO(擔任網頁工程師)', 'position': 3}, '198256114382761218': {'href': 'https://kuihaolink.blogspot.com/p/blog-page.html', 'title': '資策會實習專題：花東社會創新', 'position': 4}}]]></b:widget-setting>
+            <b:widget-setting name='pageListJson'><![CDATA[{'home': {'href': 'https://kuihaolink.blogspot.com/', 'title': '首頁', 'position': 0}, 'link0': {'href': 'https://github.com/PetiingCat', 'title': 'Github(程式作品集及LeetCode練習)', 'position': 1}, 'link1': {'href': 'http://vincent7421.pixnet.net/blog', 'title': '程式語言筆記(個人部落格)', 'position': 2}, 'link2': {'href': 'https://qgmountainsea.wixsite.com/website', 'title': 'QG山海--創作生活、關注環保的NGO(擔任網頁工程師)', 'position': 3}, 'link3': {'href': 'https://kuihaolink.blogspot.com/p/blog-page.html#198256114382761218', 'title': '資策會實習專題：花東社會創新', 'position': 4}}]]></b:widget-setting>
             <b:widget-setting name='homeTitle'>首頁</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
@@ -3881,12 +3932,23 @@ Instagram請搜尋🔍 &amp;#064;_visualbeats_ &amp;amp; &amp;#064;QG_MS&lt;/p&g
   </div>
 </b:includable>
         </b:widget>
+        <b:widget id='Text2' locked='false' title='Licence' type='Text' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<a href="https://imgur.com/Hfd9nVJ">SAP(MM模組)軟體應用師證書</a><br/><a href="https://imgur.com/tRw1FQ5">外語領隊人員證書</a><br/><a href="https://imgur.com/v1oHyHj">外語導遊人員證書</a><br/><a href="https://imgur.com/wr08aPv">助理引導員培訓證書</a>]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+        </b:widget>
         <b:widget id='Stats1' locked='false' title='瀏覽量' type='Stats' visible='true'>
           <b:widget-settings>
-            <b:widget-setting name='showGraphicalCounter'>true</b:widget-setting>
+            <b:widget-setting name='showGraphicalCounter'>false</b:widget-setting>
             <b:widget-setting name='showAnimatedCounter'>true</b:widget-setting>
-            <b:widget-setting name='showSparkline'>false</b:widget-setting>
-            <b:widget-setting name='sparklineStyle'>WHITE_TRANSPARENT</b:widget-setting>
+            <b:widget-setting name='showSparkline'>true</b:widget-setting>
+            <b:widget-setting name='sparklineStyle'>BLACK_TRANSPARENT</b:widget-setting>
             <b:widget-setting name='timeRange'>ALL_TIME</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
